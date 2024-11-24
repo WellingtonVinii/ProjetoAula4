@@ -8,10 +8,6 @@
   ],
   "routes": [
     {
-      "src": "/login.html",
-      "dest": "/login.html"
-    },
-    {
       "handle": "filesystem"
     },
     {
@@ -20,4 +16,3 @@
     }
   ]
 }
-

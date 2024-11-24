@@ -1,11 +1,12 @@
 {
-  "name": "trabalhom1",
+  "name": "trabalhom4",
   "version": "1.0.0",
   "description": "Projeto trabalho 4",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "nodemon index.js",
+
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

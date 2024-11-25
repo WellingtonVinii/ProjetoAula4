@@ -8,15 +8,12 @@
   ],
   "routes": [
     {
-      "handle": "filesystem"
+      "src": "/login.html",
+      "dest": "/public/login.html"
     },
     {
       "src": "/(.*)",
       "dest": "index.js"
-    },
-    { 
-      "src": "/login.html", 
-      "dest": "public/login.html" 
     }
   ]
 }

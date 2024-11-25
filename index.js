@@ -24,7 +24,7 @@ app.use(session({
 
 app.use(cookieParser());
 
-app.use(express.static('./pages/public'));
+app.use(express.static('./public'));
 
 function cadastrarClienteView(req, res) {
     res.send(`

@@ -13,10 +13,10 @@
     {
       "src": "/(.*)",
       "dest": "index.js"
+    },
+    { 
+      "source": "/login.html", 
+      "destination": "/pages/public/login.html" 
     }
-  ],
-  "rewrites": [
-      { "source": "/login.html", "destination": "/public/login.html" }
   ]
-
 }

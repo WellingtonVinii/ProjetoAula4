@@ -15,7 +15,7 @@
       "dest": "index.js"
     },
     { 
-      "source": "/login.html", 
+      "src": "/login.html", 
       "destination": "/pages/public/login.html" 
     }
   ]

@@ -1,6 +1,7 @@
 import express from 'express';
 import session from 'express-session';
 import cookieParser from 'cookie-parser';
+import path from 'path'
 
 const porta = 3000;
 const host = 'localhost';//ip de todas as interfaces (placas de rede do pc)
@@ -23,6 +24,7 @@ app.use(session({
 }));
 
 app.use(cookieParser());
+
 
 app.use(express.static('./public'));
 
@@ -309,6 +311,11 @@ function verificarAutenticacao(req, resp, next){
 app.get('/login', (req, resp) => {
     resp.redirect('/login.html');
 });
+
+app.get('/login.html', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'login.html'));
+});
+
 
 app.get('/logout', (req,resp)=>{
      req.session.destroy();

@@ -4,7 +4,7 @@ import cookieParser from 'cookie-parser';
 import path from 'path'
 
 const porta = 3000;
-const host = 'localhost';//ip de todas as interfaces (placas de rede do pc)
+const host = 'localhost';
 
 var listaClientes = [];
 
@@ -307,10 +307,6 @@ function verificarAutenticacao(req, resp, next){
         resp.redirect('/login.html');
     }
 };
-
-app.get('/login', (req, resp) => {
-    resp.redirect('/login.html');
-});
 
 app.get('/login.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'login.html'));
